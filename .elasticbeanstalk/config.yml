@@ -1,6 +1,8 @@
 branch-defaults:
   default:
     environment: wninit
+  master:
+    environment: wninit
 global:
   application_name: wninit
   branch: null
