@@ -1,8 +1,8 @@
 branch-defaults:
   default:
-    environment: wninit
+    environment: LowCost-env
   master:
-    environment: wninit
+    environment: LowCost-env
     group_suffix: null
 global:
   application_name: wninit
