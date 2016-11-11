@@ -8,4 +8,8 @@ router.get('/', function(req, res, next) {
   	res.sendFile(path.join(viewpath,'/index.html'));
 });
 
+router.get('/dice', function(req, res, next) {
+  	res.sendFile(path.join(viewpath,'/dice.html'));
+});
+
 module.exports = router;
