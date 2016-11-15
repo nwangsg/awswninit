@@ -9,6 +9,7 @@ logs
 npm-debug.log*
 *.swp
 *.swo
+bundle.js
 
 # Runtime data
 pids
