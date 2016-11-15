@@ -9,18 +9,19 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-red.min.css">
 		<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-		<script src="../js/bundle.js" type="text/javascript" charset="utf-8"></script>
-		<style>
-		</style>
+		<!-- babylon.js -->
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/babylonjs/2.4.1/babylon.js" integrity="sha256-xEG98KLoy6Vn9Y00UqMgckv4Fl9+j8OliAQP6tGc+v4=" crossorigin="anonymous"></script>
+		<script defer src="js/game.js"></script>
 	</head>
 	<body>
 		<button id ="diceBtnBootStrap" onclick="window.location.href='/Index';"  class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
 			<i class="glyphicon glyphicon-menu-left">
 			</i>
 		</button>
+		<canvas id="glCanvas"></canvas>
 	</body>
 </html>
