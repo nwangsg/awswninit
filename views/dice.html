@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8"></meta>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<!-- Latest compiled and minified CSS -->
@@ -15,13 +15,29 @@
 		<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 		<!-- babylon.js -->
 		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/babylonjs/2.4.1/babylon.js" integrity="sha256-xEG98KLoy6Vn9Y00UqMgckv4Fl9+j8OliAQP6tGc+v4=" crossorigin="anonymous"></script>
-		<script defer src="js/game.js"></script>
+		<script defer src="js/dice.js"></script>
+		<script defer src="modules/handjs/hand.min.js"></script>
+		<style>
+			html, body {
+				overflow: hidden;
+				width   : 100%;
+				height  : 100%;
+				margin  : 0;
+				padding : 0;
+			}
+
+			#renderCanvas {
+				width   : 100%;
+				height  : 100%;
+				touch-action: none;
+			}
+		</style>
 	</head>
 	<body>
-		<button id ="diceBtnBootStrap" onclick="window.location.href='/Index';"  class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-			<i class="glyphicon glyphicon-menu-left">
-			</i>
-		</button>
-		<canvas id="glCanvas"></canvas>
+		<!-- <button id ="diceBtnBootStrap" onclick="window.location.href='/Index';"  class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"> -->
+		<!--     <i class="glyphicon glyphicon-menu-left"> -->
+		<!--     </i> -->
+		<!-- </button> -->
+		<canvas id="renderCanvas"></canvas>
 	</body>
 </html>

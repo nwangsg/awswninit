@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', router);
 app.use('/js',express.static('js'));
+app.use('/modules',express.static('node_modules'));
 
 // var jsdom = require('jsdom').jsdom
 //   , myWindow = jsdom().createWindow()
